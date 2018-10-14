@@ -1,0 +1,52 @@
+CREATE DATABASE bamazon
+
+
+USE bamazon;
+
+CREATE TABLE products(
+  id INT NOT NULL AUTO_INCREMENT,
+  product_names VARCHAR(45) NULL,
+  department_name VARCHAR(45) NULL,
+  price DECIMAL(65),
+  stock_quantity NUMERIC(50),
+  PRIMARY KEY (id)
+);
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Laptop", "Electronics" , 600.00, 04);
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Couch", "Furniture", 500.00, 02 );
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Voodoo Doll", "Misc", 30, 50);
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Cellphone", "Electronics" , 300.00, 04);
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Coffee Table", "Furniture", 500.00, 02 );
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Board Game", "Misc", 30, 50);
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Wireless mouse", "Electronics" , 40.00, 10);
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("End table", "Furniture", 90.00, 10 );
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Bop It!", "Misc", 30, 20);
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Batteries", "Electronics" , 12.00, 5);
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Kitchen Table", "Furniture", 120.00, 5 );
+
+INSERT INTO products (product_names, department_name, price, stock_quantity)
+VALUES ("Action Figure", "Misc", 45, 10);
+
+
+select * from products
